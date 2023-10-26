@@ -39,6 +39,15 @@ body {
 }
 
 /* interatividade da navbar inicio*/
+
+.nav-links a.selected{
+    background-color: white;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 10%;
+    margin: 0 20px;
+}
+
 .nav-links {
     text-decoration: none;
     list-style: none;
@@ -155,13 +164,6 @@ section.module.parallax h1{
 
 /*Legenda voltar ao topo início*/
 
-.hide{
-    display: none;
-}
-
-#legenda{
-    color: blueviolet;
-}
 
 /*Legenda voltar ao topo fim*/
 
@@ -238,7 +240,6 @@ footer{
     transition: .10s all;
 
 }
-
 
 /*footer fim*/
 
