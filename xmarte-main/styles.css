@@ -1,0 +1,246 @@
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+
+/* Estilos da barra de navegação (navbar) */
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    display: flex;
+   padding-right: 125px;
+}
+
+.logo a {
+    display: flex;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding-left: 20%;
+}
+
+.nav-links li {
+    
+    color: white;
+    font-size: 16px;
+    padding-right: 30px;
+}
+
+/* interatividade da navbar inicio*/
+
+.nav-links a.selected{
+    background-color: white;
+    color: black;
+    padding: 5px 7px;
+    border-radius: 10%;
+    margin: 0 20px;
+}
+
+.nav-links {
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+
+.nav-links a {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight:bold ;
+    transition: all 250ms linear;
+}
+
+
+.nav-links a:hover{
+    text-align: center;
+    padding: 5px 7px;
+    border-radius: 10%;
+    margin-right: 20px;
+    text-decoration: none;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+
+}
+
+.nav-links a:active{
+    transition: all 100ms;
+    font-size: small;
+    background-color: rgb(157, 157, 157);
+}
+
+/*Interatividade da navbar fim*/
+
+/*Parallax início*/
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+    color: black;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background-color: white;
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+section.module p{
+    margin-bottom: 40px;
+}
+
+section.module:last-child{
+    margin-bottom: 0;
+}
+
+section.module h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content{
+    padding: 40px 0;
+    background-color: rgb(196, 196, 196);
+}
+
+section.module.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+section.module.parallax-1{
+    background-image: url(img/image-asset.jpeg);
+}
+
+section.module.parallax-2{
+    background-image: url(img/robosinhodopix.png);
+}
+
+section.module.parallax-3{
+    background-image: url(img/marte.jpg);
+}
+
+section.module.parallax h1{
+    color: #fff;
+    text-align: center;
+    font-size: 60px;
+    z-index: 50;
+    text-transform: uppercase;
+}
+/*Parallax fim*/
+
+/*Legenda voltar ao topo início*/
+
+
+/*Legenda voltar ao topo fim*/
+
+/*footer inicio*/
+
+footer{
+    width: 100%;
+    color: black;
+}
+
+#footer_content {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+    font-size: 14px;
+}
+
+.footer-list{
+    display: flex;
+    list-style: none;       
+}
+
+.footer-list .footer-link{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+}
+
+
+#footer_social_media{
+    display: flex;   
+    justify-content: center;
+    background-color: black;
+}
+
+#footer_social_media .footer-link{
+    padding-left: 20px;
+    color: white;
+}
+
+#footer-copywhite{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 1rem;
+    padding-left: 70px;
+    font-weight: 100;
+}
+
+
+/*voltar ao topo*/
+
+.topo{  
+    background: white;
+    color: black;
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    bottom: 45px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .10s all;
+}
+
+.show-button .topo{
+    right: 20px;
+    transition: .10s all;
+
+}
+
+/*footer fim*/
+
