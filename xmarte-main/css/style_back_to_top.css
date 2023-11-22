@@ -1,0 +1,22 @@
+.topo{  
+    background: rgb(59, 59, 59);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    bottom: 20px;
+    right: -500px;
+    bottom: 20px;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .50s all;
+    box-shadow: 0px 0px 7px rgb(255, 255, 255);
+}
+
+.show-button .topo{
+    right: 20px;
+    transition: .50s all;
+
+}
