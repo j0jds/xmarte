@@ -13,30 +13,37 @@ body {
 
 
 /* Estilos da barra de navegação (navbar) */
+
+#content_nav{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(19, 21, 24);
+    font-size: 14px;
+}
+
 .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.8) !important;
     position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
-    display: flex;
-   padding-right: 125px;
+   
 }
 
 .logo a {
-    display: flex;
     color: white;
     text-decoration: none;
     font-weight: bold;
-    padding-left: 20%;
 }
 
 .nav-links li {
-    
     color: white;
     font-size: 16px;
-    padding-right: 30px;
 }
 
 /* interatividade da navbar inicio*/
@@ -45,7 +52,8 @@ body {
     background-color: white;
     color: black;
     padding: 5px 7px;
-    border-radius: 10%;
+    border-radius: 10px;
+    transition: border-radius 5s;
     margin: 0 20px;
 }
 
@@ -71,7 +79,7 @@ body {
 .nav-links a:hover{
     text-align: center;
     padding: 5px 7px;
-    border-radius: 10%;
+    border-radius: 10px;
     margin-right: 20px;
     text-decoration: none;
     background-color: rgb(255, 255, 255);
@@ -84,6 +92,45 @@ body {
     font-size: small;
     background-color: rgb(157, 157, 157);
 }
+
+#sign_nav{
+    display: flex;
+}
+
+.sign_in{
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+    text-decoration: none;
+    font-size: 12px;
+    color: white;
+    cursor: pointer;
+    transition: color 0.5s;
+
+}
+
+.sign_in:hover{
+    color: rgb(125, 133, 144);
+}
+
+
+.sign_up{
+    padding: 10px;
+    display: flex;
+    background-color: #e04a18;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    z-index: 1;
+}
+
+.sign_up:hover{
+    background-color: #822d11da;
+}
+
+
 
 /*Interatividade da navbar fim*/
 
