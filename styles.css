@@ -15,12 +15,13 @@ body {
 /* Estilos da barra de navegação (navbar) */
 .navbar {
     background-color: rgba(0, 0, 0, 0.8) !important;
-    position: fixed!important;
+    position: fixed !important;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 100;
     display: flex;
+   padding-right: 125px;
 }
 
 .logo a {
@@ -142,15 +143,15 @@ section.module.parallax{
 }
 
 section.module.parallax-1{
-    background-image: url(img/landscape.png);
+    background-image: url(img/image-asset.jpeg);
 }
 
 section.module.parallax-2{
-    background-image: url(img/landscape2.jpeg);
+    background-image: url(img/robosinhodopix.png);
 }
 
 section.module.parallax-3{
-    background-image: url(img/landscape3.jpeg);
+    background-image: url(img/marte.jpg);
 }
 
 section.module.parallax h1{
@@ -242,4 +243,168 @@ footer{
 }
 
 /*footer fim*/
+
+
+
+/* CSS para todas as telas */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+/* CSS para telas pequenas */
+@media only screen and (max-width: 600px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle input {
+        display: none;
+    }
+
+    .menu-toggle span {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        margin: 5px auto;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .menu-toggle input:checked ~ .nav-links {
+        display: flex;
+    }
+}
+
+
+/* CSS para telas pequenas */
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 540px;
+    }
+
+    #title_form h2 {
+        font-size: 18px; /* ajuste conforme necessário */
+    }
+
+    #data_form input {
+        font-size: 14px; /* ajuste conforme necessário */
+    }
+}
+
+/* CSS para telas médias */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .container {
+        max-width: 720px;
+    }
+
+    #title_form h2 {
+        font-size: 24px; /* ajuste conforme necessário */
+    }
+
+    #data_form input {
+        font-size: 16px; /* ajuste conforme necessário */
+    }
+}
+
+/* CSS para telas grandes */
+@media only screen and (min-width: 1025px) {
+    .container {
+        max-width: 960px;
+    }
+
+    #title_form h2 {
+        font-size: 30px; /* ajuste conforme necessário */
+    }
+
+    #data_form input {
+        font-size: 18px; /* ajuste conforme necessário */
+    }
+}
+
+/* CSS para todas as telas */
+footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+#img_footer img {
+    max-width: 100%;
+    height: auto;
+}
+
+#link_footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#link_footer a {
+    margin: 5px 0;
+}
+
+#copy {
+    margin: 10px 0;
+}
+
+/* CSS para telas pequenas */
+@media only screen and (max-width: 600px) {
+    #link_footer a {
+        font-size: 14px; /* ajuste conforme necessário */
+    }
+
+    #copy a {
+        font-size: 12px; /* ajuste conforme necessário */
+    }
+}
+
+/* CSS para telas médias */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+    #link_footer a {
+        font-size: 16px; /* ajuste conforme necessário */
+    }
+
+    #copy a {
+        font-size: 14px; /* ajuste conforme necessário */
+    }
+}
+
+/* CSS para telas grandes */
+@media only screen and (min-width: 1025px) {
+    #link_footer {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #link_footer a {
+        margin: 0 10px;
+        font-size: 18px; /* ajuste conforme necessário */
+    }
+
+    #copy a {
+        font-size: 16px; /* ajuste conforme necessário */
+    }
+}
 
